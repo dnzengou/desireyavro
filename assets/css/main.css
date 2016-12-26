@@ -2858,20 +2858,26 @@ body {
     height: 5em;
     line-height: 5em;
     margin: 0;
-    background: #e5e5e5;
+    background: #3b5998;
     /*#39454b*/
     color: #999;
-    color: rgba(185, 186, 187, 0.5);
+    color: #fff;
+    /*rgba(185, 186, 187, 0.5)*/
     overflow: hidden;
 }
 
 #footer a {
-    color: #999;
-    color: rgba(185, 186, 187, 0.5);
+    color: #fff;
+    /*#999*/
+    ;
+    color: #fff;
+    /*rgba(185, 186, 187, 0.5)*/
+    ;
 }
 
 #footer a:hover {
-    color: #bbb;
+    color: #fff;
+    /*#bbb*/
     color: #b9babb;
 }
 
