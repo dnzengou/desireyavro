@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    height: 100%;
+    color: #333;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+google-map {
+    position: static;
+    display: block;
+    height: 100%;
+}
+
+paper-card {
+    /*position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 1;*/
+    position: fixed;
+    top: 50px;
+    left: 15px;
+    z-index: 2;
+}
+
+section {
+    margin: 20px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+iron-toolbar {
+    background-color: #455ede;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+
+paper-button {
+    margin: 0.5em 1em 0.5em 0;
+    width: 10em;
+}
+
+paper-button[right] {
+    position: fixed;
+    right: 0;
+}
+
+paper-checkbox {
+    margin-left: 1em;
+}
+
+paper-fab {
+    position: absolute !important;
+    bottom: 35px;
+    left: 1em;
+    z-index: 1;
+}
+
+paper-tabs {
+    --paper-tabs-selection-bar-color: #0D47A1;
+    margin-top: 16px;
+}
+
+paper-tab {
+    --paper-tab-ink: #BBDEFB;
+}
+
+
+/* Other styles that make things more pleasant.
+       These could instead be added in styles.css since they
+       do not use any Polymer styling features. */
+
+paper-tab iron-icon {
+    margin-right: 10px;
+}
+
+paper-tab.iron-selected {
+    background: rgb(66, 133, 244);
+    color: white;
+}

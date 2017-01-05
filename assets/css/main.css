@@ -2760,7 +2760,7 @@ body {
 
 #intro {
     /*background: url("images/overlay.png"), url("../../img/intro.jpg");*/
-    background: url("images/overlay.png"), url("../../img/coffee_cup.png");
+    background: url("images/overlay.png"), url("../../img/intro.jpg");
     background-size: 256px 256px, cover;
     background-attachment: fixed, fixed;
     background-position: top left, bottom center;

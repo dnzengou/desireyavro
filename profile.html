@@ -30,6 +30,9 @@
 
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="stylesheet" href="assets/css/myTopnav.css" />
+
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
@@ -45,28 +48,21 @@
 
 <body>
 
-    <!-- Header -->
-    <header id="header">
-
-        <!-- Logo -->
-        <h1 id="logo"><img src="img/favicons/favicon-32x32.png"></h1>
-
-        <!-- Nav -->
-
-
-        <nav id="nav">
-            <ul>
-                <li><a href="#intro">About</a></li>
-                <li><a href="#one">What I Do</a></li>
-                <li><a href="#two">Who I Am</a></li>
-                <li><a href="#work">My Work</a></li>
-                <li><a href="http://desireyavro.wixsite.com/personal-2-personal/projects">Projects</a></li>
-                <li><a href="https://dnzengou.github.io/my-online-resume/">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    <ul class="topnav" id="myTopnav">
+        <li><a class="active" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#one">What I Do</a></li>
+        <li><a href="#two">Who I Am</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="http://desireyavro.wixsite.com/personal-2-personal/projects">Projects</a></li>
+        <li><a href="https://dnzengou.github.io/my-online-resume/">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="map.html">myMap</a></li>
+        <li class="icon">
+            <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <!--<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()"></i>☰</a>-->
+        </li>
+    </ul>
 
     <!-- Intro -->
     <section id="intro" class="main style1 dark fullscreen">
@@ -78,18 +74,18 @@
                 <br> I am a <strong>data enthusiast</strong>, <strong>trainer</strong> and educator by vocation, <strong>nuclear physicist</strong> by education, currently building <strong>tech startups</strong> and related <strong>websites</strong> or
                 <strong>web apps</strong>.
                 <br> What drives me? Challenging projects with tight deadlines &amp; hard objectives ;-)
-
                 <br>
+            </p>
 
-                <h3>My area of expertise</h3>
-                <button type="button" class="btn btn-info" onclick="alert('More about my experience in industry, see here!')"><a href="https://drive.google.com/open?id=0B27h2BZXrfSgLS1JWE50ZF8xWVk">Industry</a></button>
-                <button type="button" class="btn btn-success" onclick="alert('More about my experience in web technologies, see here!')"><a href="https://drive.google.com/open?id=0B27h2BZXrfSgWlQ1MHAzUkVPSDg">Web Technology</a></button>
+            <h3>My area of expertise</h3>
+            <button type="button" class="btn btn-info" onclick="alert('More about my experience in industry, see here!')"><a href="https://drive.google.com/open?id=0B27h2BZXrfSgLS1JWE50ZF8xWVk">Industry</a></button>
+            <button type="button" class="btn btn-success" onclick="alert('More about my experience in web technologies, see here!')"><a href="https://drive.google.com/open?id=0B27h2BZXrfSgWlQ1MHAzUkVPSDg">Web Technology</a></button>
 
 
 
-                <footer>
-                    <a href="#one" class="button style2 down">More</a>
-                </footer>
+            <footer>
+                <a href="#one" class="button style2 down">More</a>
+            </footer>
         </div>
     </section>
 
@@ -126,10 +122,10 @@
             <header>
                 <h2>Who I Am</h2>
             </header>
-            <p>From african dual origins, living in Europe for years now and citizen of Brussels, I am an '<i>afropean</i>' a.k.a world citizen ;-) who did study at Free University of Brussels (Université Libre de Bruxelles - <i>ULB</i>) and Paul-Henry Spaak
-                College - <i>I.S.I.B</i>, followed by a complementary degree of Management at ICHEC Brussels Management School.
+            <p>From african dual origins, euurope citizen, I am did study at Université Libre de Bruxelles (<i>ULB</i>) and Paul-Henry Spaak College - <i>I.S.I.B</i>, followed by a complementary degree of Management at ICHEC Brussels Management School.
                 <br> Apart from that, I like describing myself as a <i>traveler</i>, a talker but first of all <i>listener</i>,food enthousiast, <i>aesthet</i> and
-                <stronger>social media adventurer</stronger> - I am responsible of what I say, not what you hear.</p>
+                <stronger>social media adventurer</stronger>
+            </p>
         </div>
         <a href="#work" class="button style2 down anchored">Next</a>
     </section>
@@ -230,17 +226,40 @@
             <li><a href="https://twitter.com/DesireYavro" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
             <li><a href="https://www.facebook.com/315161995533634" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
             <li><a href="https://www.instagram.com/desireyavro/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.linkedin.com/in/ednzengou" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/dnzengou" class="icon fa-github"><span class="label">Github</span></a></li>
         </ul>
 
-        <!-- Menu -->
         <ul class="menu">
-            <li>&copy; desireyavro</li>
-            <li>Designed by <a href="http://desireyavro.com">E.D.</a></li>
+            <p>&copy; 2016 desireyavro - made with <i class="fa fa-coffee" style="color:brown"></i> and <i class="fa fa-heart" style="color:pink"></i> by <a href="http://desireyavro.com">E. D.</a> </p>
         </ul>
 
     </footer>
 
     <!-- Scripts -->
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-76586418-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
