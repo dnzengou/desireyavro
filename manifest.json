@@ -1,0 +1,13 @@
+{
+    "name": "desireyavro.com - How can I help?",
+    "short_name": "desireyavro",
+    "display": "standalone",
+    "start_url": "/",
+    "theme_color": "#e5e5e5",
+    "background_color": "#fff",
+    "icons": [{
+        "src": "images/favicons/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+    }]
+}
