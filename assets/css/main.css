@@ -2759,7 +2759,6 @@ body {
 /* Intro */
 
 #intro {
-    /*background: url("images/overlay.png"), url("../../img/intro.jpg");*/
     background: url("images/overlay.png"), url("../../img/intro.jpg");
     background-size: 256px 256px, cover;
     background-attachment: fixed, fixed;
@@ -2771,7 +2770,7 @@ body {
 /* One */
 
 #one {
-    background: url("images/overlay.png"), url("../../img/one.jpg");
+    background: url("images/overlay.png"), url("../../img/one.gif");
     background-size: 256px 256px, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
