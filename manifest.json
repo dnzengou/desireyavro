@@ -6,7 +6,7 @@
     "theme_color": "#e5e5e5",
     "background_color": "#fff",
     "icons": [{
-        "src": "images/favicons/apple-touch-icon.png",
+        "src": "img/favicons/apple-touch-icon.png",
         "sizes": "180x180",
         "type": "image/png"
     }]
