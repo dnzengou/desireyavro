@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link href="assets/css/style-social-parallax.css" rel="stylesheet" type="text/css" media="screen" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <link rel="stylesheet" href="assets/css/myTopnav.css" />
@@ -66,27 +67,36 @@
 
 <body>
 
+
+
     <div id="social">
         <div>
-            <a title="contatti" href="http://www.aidp.it/contatti"><img src="http://www.aidp.it/img/contatti.gif" width="50" alt="contatti" border="1" /></a>
+            <a title="email" href="tel:555-555-5555"><img src="img/contatti.gif" width="50" alt="contatti" border="1" /></a>
         </div>
         <div>
-            <a title="area riservata" href="#" onclick="javascript:mostra_popup_utenti();"><img src="http://www.aidp.it/img/area-riservata.jpg" width="50" height="50" alt="acrea riservata" title="area riservata" border="1" /></a>
+            <a title="email" href="mailto:desireyavro@desireyavro.customerly.io"><img src="img/e-mail.png" width="50" alt="contatti" border="1" /></a>
         </div>
         <div>
-            <a title "blog aidp" href="http://blog.aidp.it" alt="blog" target="_blank"><img src="img/blog.jpg" alt="blog" width="40" border="1" /></a>
+            <a title="login" href="#" onclick="javascript:mostra_popup_utenti();"><img src="img/area-riservata.jpg" width="50" height="50" alt="login" border="1" /></a>
+        </div>
+        <!--<div>
+            <a title "blog desireyavro" href="#" alt="blog" target="_blank"><img src="img/blog.png" alt="blog" width="40" border="1" /></a>
+        </div>-->
+        <!--https://www.facebook.com/sharer.php?u=http%3A%2F%2desireyavro.com%2Fportfolio.html-->
+        <div>
+            <a title="facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2desireyavro.com%2Fportfolio.html" alt="facebook" target="_blank"><img src="img/Facebook_Circle.png" alt="facebook" target="_blank" /></a>
         </div>
         <div>
-            <a title="twitter" href="https://twitter.com/aidplive" alt="twitter" target="_blank"><img src="img/hp/twit-png.jpg" alt="twitter" width="40" border="1" /></a>
+            <a title="twitter" href="https://twitter.com/intent/tweet?text=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F&url=http%3A%2F%2Flocalhost%3A8080%2Fportfolio.html" alt="twitter" target="_blank"><img src="img/twit.png" alt="twitter" width="40" border="1" /></a>
         </div>
         <div>
-            <a title="linkedin" href="http://www.linkedin.com/groups?gid=2006141&mostPopular=&trk=tyah" target="_blank"><img src="img/hp/ln-png.jpg" alt="linkedin" width="33" border="1" /></a>
+            <a title="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fportfolio.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F" target="_blank"><img src="img/ln.png" alt="linkedin" width="33" border="1" /></a>
         </div>
+        <!--<div>
+            <a title="print" href="#" onclick="myPrintFunction()"><img src="img/print.png" /></a>
+        </div>-->
         <div>
-            <a title="youtube" href="http://www.youtube.com/channel/UCUhQ5uJiCnT0Ig2DKblFKOQ" alt="youtube" target="_blank"><img src="img/hp/tube-png.jpg" alt="youtube" width="40" border="1" /></a>
-        </div>
-        <div>
-            <a title="instagram" href="https://www.instagram.com/aidp_social/" alt="instagram" target="_blank"><img src="img/hp/instagram.png" alt="instagram" width="40" border="0" /></a>
+            <a title="messenger" href="https://m.me/HeyImDesire" alt="messenger" target="_blank"><img src="img/messenger.png" alt="instagram" width="40" border="0" /></a>
         </div>
     </div>
 
@@ -97,10 +107,11 @@
         <li><a href="#two">Who I Am</a></li>
         <li><a href="#work">My Work</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="clear.html"><code>Clear</code></a></li>
         <!--<li><a href="http://desireyavro.wixsite.com/personal-2-personal/projects">Projects</a></li>
         <li><a href="https://dnzengou.github.io/my-online-resume/">CV</a></li>-->
-        <li><a href="#contact">Contact</a></li>
-        <!--<li><a href="map.html">my Startup Map</a></li>-->
+        <!--<li><a href="#contact">Contact</a></li>
+        <li><a href="map.html">my Startup Map</a></li>-->
         <li class="icon">
             <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i></a>
             <!--<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()"></i>☰</a>-->
@@ -224,7 +235,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="main style3 secondary">
+    <!--<section id="contact" class="main style3 secondary">
         <div class="content container">
             <header>
                 <h2>Say Hello.</h2>
@@ -232,16 +243,14 @@
                 <br>
                 <button type="button" class="btn btn-danger" onclick="alert('For a more formal written conversation, please e-mail me here!')"><a href="mailto:dnzengou@gmail.com" style="color:#fff"><span class="social fa fa-envelope-o">  e-mail </span></a></button>
                 <span></span><button type="button" class="btn btn-primary" onclick="alert('For a casual chat, yet business oriented, have a chat!')"><a href="http://m.me/HeyImDesire" style="color:#fff"><span class="social fa fa-facebook"> Message me </span></a></button>
-                <!--<img src="img/messenger_code_315161995533634-app-icon_706868359481390.png">
-						<p> Or please fill the form below </p>-->
 
             </header>
             <div class="box container 75%">
                 <p> Or simply scan the <strong> messenger code</strong> below and let's have a fb chat ;) </p>
                 <img src="img/messenger_code_315161995533634.png">
 
-                <!-- Contact Form -->
-                <!--<form method="post" action="#">
+                
+                <form method="post" action="#">
 								<div class="row 50%">
 									<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
@@ -256,17 +265,17 @@
 										</ul>
 									</div>
 								</div>
-							</form>-->
+							</form>
 
                 <hr>
 
                 <span></span>
-                <!--<p>See more on my online résumé about relevant projects &amp; experiences </font><a href="myprofile.html"> Here <span class="social fa fa-home"></span></a></p>-->
+                <p>See more on my online résumé about relevant projects &amp; experiences </font><a href="myprofile.html"> Here <span class="social fa fa-home"></span></a></p>
 
 
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Footer -->
     <footer id="footer">
@@ -304,6 +313,12 @@
 
         ga('create', 'UA-76586418-3', 'auto');
         ga('send', 'pageview');
+    </script>
+
+    <script>
+        function myPrintFunction() {
+            window.print();
+        }
     </script>
 
     <script>
@@ -380,25 +395,12 @@
         }();
     </script>
 
-    <!--<script>
-        customerly('show'); // This will show the widget
-        customerly('hide'); // This will hide the widget
-        customerly('stop'); // This will stop every action with Customerly
-        customerly('open'); // This will force the open the conversation window of the widget
-        customerly('close'); // This will force the close of the conversation window of the widget
-    </script>-->
-
     <script>
-        window.customerlySettings = {
-            // Set visible a false if you want to hide the widget
-            widget_visible = false,
-
-            // Set the widget color
-            widget_color = 'FFFFFF',
-
-            // Set the widget position
-            widget_position = 'left'
-        }
+        /*customerly('show'); // This will show the widget
+                                                                                                                                                                                                                                            customerly('hide'); // This will hide the widget
+                                                                                                                                                                                                                                            customerly('stop'); // This will stop every action with Customerly
+                                                                                                                                                                                                                                            customerly('open');*/ // This will force the open the conversation window of the widget
+        customerly('close'); // This will force the close of the conversation window of the widget
     </script>
 
 </body>

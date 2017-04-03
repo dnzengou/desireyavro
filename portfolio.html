@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link href="assets/css/style-social-parallax.css" rel="stylesheet" type="text/css" media="screen" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -37,9 +38,58 @@
     <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <style>
+        #social img {
+            width: 50px
+        }
+        
+        .text-white {
+            color: #fff
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center
+        }
+    </style>
+
 </head>
 
 <body>
+
+
+
+    <div id="social">
+        <div>
+            <a title="email" href="tel:555-555-5555"><img src="img/contatti.gif" width="50" alt="contatti" border="1" /></a>
+        </div>
+        <div>
+            <a title="email" href="mailto:desireyavro@desireyavro.customerly.io"><img src="img/e-mail.png" width="50" alt="contatti" border="1" /></a>
+        </div>
+        <div>
+            <a title="login" href="#" onclick="javascript:mostra_popup_utenti();"><img src="img/area-riservata.jpg" width="50" height="50" alt="login" border="1" /></a>
+        </div>
+        <!--<div>
+            <a title "blog desireyavro" href="#" alt="blog" target="_blank"><img src="img/blog.png" alt="blog" width="40" border="1" /></a>
+        </div>-->
+        <!--https://www.facebook.com/sharer.php?u=http%3A%2F%2desireyavro.com%2Fportfolio.html-->
+        <div>
+            <a title="facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2desireyavro.com%2Fportfolio.html" alt="facebook" target="_blank"><img src="img/Facebook_Circle.png" alt="facebook" target="_blank" /></a>
+        </div>
+        <div>
+            <a title="twitter" href="https://twitter.com/intent/tweet?text=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F&url=http%3A%2F%2Flocalhost%3A8080%2Fportfolio.html" alt="twitter" target="_blank"><img src="img/twit.png" alt="twitter" width="40" border="1" /></a>
+        </div>
+        <div>
+            <a title="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A8080%2Fportfolio.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F" target="_blank"><img src="img/ln.png" alt="linkedin" width="33" border="1" /></a>
+        </div>
+        <div>
+            <a title="print" href="#" onclick="myPrintFunction()"><img src="img/print.png" /></a>
+        </div>
+        <div>
+            <a title="messenger" href="https://m.me/HeyImDesire" alt="messenger" target="_blank"><img src="img/messenger.png" alt="instagram" width="40" border="0" /></a>
+        </div>
+    </div>
 
     <!-- awesometable -->
     <div data-type="AwesomeTableView" data-viewID="-KaIMyYcIUS1U0xNhu8M"></div>
@@ -110,7 +160,7 @@
         Smooch.init({
             appToken: 'ctm3r31c70swoi1hdqey4u1vt'
         });
-    </script>-->
+    </script>
 
     <script>
         (function(w, i, d, g, e, t, s) {
@@ -121,7 +171,7 @@
             s = i.getElementsByTagName(g)[0];
             s.parentNode.insertBefore(t, s);
         })(window, document, '_gscq', 'script', '//widgets.getsitecontrol.com/72492/script.js');
-    </script>
+    </script>-->
 
     <script>
         window.customerlySettings = {
@@ -160,24 +210,11 @@
     </script>
 
     <script>
-        customerly('show'); // This will show the widget
-        customerly('hide'); // This will hide the widget
-        customerly('stop'); // This will stop every action with Customerly
-        customerly('open'); // This will force the open the conversation window of the widget
+        /*customerly('show'); // This will show the widget
+                                                                                                        customerly('hide'); // This will hide the widget
+                                                                                                        customerly('stop'); // This will stop every action with Customerly
+                                                                                                        customerly('open');*/ // This will force the open the conversation window of the widget
         customerly('close'); // This will force the close of the conversation window of the widget
-    </script>
-
-    <script>
-        window.customerlySettings = {
-            // Set visible a false if you want to hide the widget
-            widget_visible = false,
-
-            // Set the widget color
-            widget_color = 'FFFFFF',
-
-            // Set the widget position
-            widget_position = 'left'
-        }
     </script>
 
 </body>
