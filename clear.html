@@ -56,6 +56,57 @@
     <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- keen.io data tracking -->
+    <script type="text/javascript">
+        ! function(name, path, ctx) {
+            var latest, prev = name !== 'Keen' && window.Keen ? window.Keen : false;
+            ctx[name] = ctx[name] || {
+                ready: function(fn) {
+                    var h = document.getElementsByTagName('head')[0],
+                        s = document.createElement('script'),
+                        w = window,
+                        loaded;
+                    s.onload = s.onerror = s.onreadystatechange = function() {
+                        if ((s.readyState && !(/^c|loade/.test(s.readyState))) || loaded) {
+                            return
+                        }
+                        s.onload = s.onreadystatechange = null;
+                        loaded = 1;
+                        latest = w.Keen;
+                        if (prev) {
+                            w.Keen = prev
+                        } else {
+                            try {
+                                delete w.Keen
+                            } catch (e) {
+                                w.Keen = void 0
+                            }
+                        }
+                        ctx[name] = latest;
+                        ctx[name].ready(fn)
+                    };
+                    s.async = 1;
+                    s.src = path;
+                    h.parentNode.insertBefore(s, h)
+                }
+            }
+        }('KeenAsync', 'https://d26b395fwzu5fz.cloudfront.net/keen-tracking-1.1.3.min.js', this);
+
+        KeenAsync.ready(function() {
+            // Configure a client instance
+            var client = new KeenAsync({
+                projectId: '58e41f350935ce40a59fa8a0',
+                writeKey: '8D6DF9ABD0F9EA6A7291B41CB107D62743608F649C6A235B13532D7F8733A834D9A8A31F544A146160B2BE5BBD0F00EBAFFD834D3AA7B4055ACAEF0CD87D3161A638DE57FCFBF4E55CFF9188209AAF78C8D1C5157592844906009F9CA584BE9F'
+            });
+
+            // Record an event
+            client.recordEvent('pageviews', {
+                title: document.title
+            });
+        });
+    </script>
+    <!-- end data tracking -->
+
 
 </head>
 
@@ -81,7 +132,7 @@
             <a title="facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2desireyavro.com%2Findex.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F" alt="facebook" target="_blank"><img src="img/Facebook_Circle.png" alt="facebook" target="_blank" /></a>
         </div>-->
         <div>
-            <a title="twitter" href="https://twitter.com/intent/tweet?text=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F&url=http%3A%2F%2Fdesireyavro.com%2Findex.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F"
+            <a title="twitter" href="https://twitter.com/intent/tweet?text=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F&url=http%3A%2F%2Fdesireyavro.com%2Fportfolio.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F"
                 alt="twitter" target="_blank"><img src="img/twit.png" alt="twitter" width="40" border="1" /></a>
         </div>
         <div>
