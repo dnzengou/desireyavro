@@ -35,6 +35,7 @@
     FONTS & ICONS
     =========================== -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
     <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -131,6 +132,19 @@
 
     </section>
 
+
+    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large blue">
+            <i class="material-icons">share</i>
+        </a>
+        <ul>
+            <li><a href="https://twitter.com/DesireYavro" class="icon fa-twitter"><span class="label"></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">linkedin</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">facebook</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">print</i></a></li>
+        </ul>
+    </div>
+
     <!-- Footer -->
     <footer id="header">
 
@@ -180,6 +194,12 @@
         ga('create', 'UA-76586418-3', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
     <script>
         function myPrintFunction() {
