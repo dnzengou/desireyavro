@@ -42,6 +42,7 @@
     STYLESHEETS
     =========================== -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
 
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link href="assets/css/style-social-parallax.css" rel="stylesheet" type="text/css" media="screen" />
@@ -171,16 +172,20 @@
 
 
     <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
-        <a class="btn-floating btn-large blue">
+        <a class="btn-floating btn-large purple">
             <i class="material-icons">share</i>
         </a>
         <ul>
+            <li><a title="back" href="index.html" class="btn-floating green"><i class="material-icons">arrow_back</i></a></li>
             <li><a title="twitter" href="https://twitter.com/intent/tweet?text=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F&url=http%3A%2F%2Fdesireyavro.com%2Fportfolio.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F"
-                    alt="twitter" target="_blank" class="icon fa-twitter"><span class="label"></a></li>
+                    alt="twitter" target="_blank" class="icon fa-twitter" style="color:deepskyblue"><span class="label"></a></li>
             <li>
-                <a title="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdesireyavro.com%2Findex.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F" alt="linkedin" target="_blank" class="icon fa-linkedin"><span class="label"></a></li>
-            <li><a title="fbmessenger" title="messenger" href="https://m.me/HeyImDesire" alt="messenger" target="_blank" class="icon fa-facebook"><span class="label"></a></li>
-            <li><a title="print" href="#" onclick="myPrintFunction()" class="btn-floating blue"><i class="material-icons">print</i></a></li>
+                <a title="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdesireyavro.com%2Findex.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F" alt="linkedin" target="_blank" class="icon fa-linkedin"
+                    style="color:mediumblue"><span class="label"></a></li>
+            <!--<li><a title="fbmessenger" href="https://m.me/HeyImDesire" alt="messenger" target="_blank" class="icon fa-facebook"><span class="label"></a></li>-->
+            <li><a title="messenger" href="https://m.me/HeyImDesire" class="btn-floating indigo"><i class="material-icons">forum</i></a></li>
+            <li><a title="print" href="#" onclick="myPrintFunction()" class="btn-floating deep orange"><i class="material-icons">print</i></a></li>
+            <li><a title="forward" href="profile.html" class="btn-floating green"><i class="material-icons">arrow_forward</i></a></li>
         </ul>
     </div>
 
@@ -202,26 +207,26 @@
             </p>
         </ul>
 
-        </footer>
+    </footer>
 
-        <script>
-            button.addEventListener('click', function() {
-                navigator.serviceWorker && navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                    caches.delete('your-magic-cache').then(() => {
-                        alert('ok');
-                    }, () => {
-                        alert('Failed!');
-                    });
+    <script>
+        button.addEventListener('click', function() {
+            navigator.serviceWorker && navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                caches.delete('your-magic-cache').then(() => {
+                    alert('ok');
+                }, () => {
+                    alert('Failed!');
                 });
-
             });
-        </script>
 
-        <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        });
+    </script>
 
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
 </body>
 
