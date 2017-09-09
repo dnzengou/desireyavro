@@ -36,18 +36,18 @@
     FONTS & ICONS
     =========================== -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
         #social img {
             width: 50px
         }
-
+        
         .text-white {
             color: #fff
         }
-
+        
         .container {
             width: 100%;
             margin: 0 auto;
@@ -106,28 +106,35 @@
     </script>-->
 
     <script type="text/javascript">
-    function createKeenWebAutoCollector(){
-      window.keenWebAutoCollector=window.KeenWebAutoCollector.create({
-      projectId:'58e41f350935ce40a59fa8a0',
-      writeKey:'8D6DF9ABD0F9EA6A7291B41CB107D62743608F649C6A235B13532D7F8733A834D9A8A31F544A146160B2BE5BBD0F00EBAFFD834D3AA7B4055ACAEF0CD87D3161A638DE57FCFBF4E55CFF9188209AAF78C8D1C5157592844906009F9CA584BE9F',
-      onloadCallbacks:window.keenWebAutoCollector.onloadCallbacks}),
-      window.keenWebAutoCollector.loaded()
-    }
-      function initKeenWebAutoCollector(){
-        window.keenWebAutoCollector.domReady()?window.createKeenWebAutoCollector():document.addEventListener("readystatechange",function(){
-          window.keenWebAutoCollector.domReady()&&window.createKeenWebAutoCollector()})
+        function createKeenWebAutoCollector() {
+            window.keenWebAutoCollector = window.KeenWebAutoCollector.create({
+                    projectId: '58e41f350935ce40a59fa8a0',
+                    writeKey: '8D6DF9ABD0F9EA6A7291B41CB107D62743608F649C6A235B13532D7F8733A834D9A8A31F544A146160B2BE5BBD0F00EBAFFD834D3AA7B4055ACAEF0CD87D3161A638DE57FCFBF4E55CFF9188209AAF78C8D1C5157592844906009F9CA584BE9F',
+                    onloadCallbacks: window.keenWebAutoCollector.onloadCallbacks
+                }),
+                window.keenWebAutoCollector.loaded()
         }
-        window.keenWebAutoCollector={onloadCallbacks:[],onload:function(a){
-          this.onloadCallbacks.push(a)},domReady:function(){
-            return["ready","complete"].indexOf(document.readyState)>-1
-          }
+
+        function initKeenWebAutoCollector() {
+            window.keenWebAutoCollector.domReady() ? window.createKeenWebAutoCollector() : document.addEventListener("readystatechange", function() {
+                window.keenWebAutoCollector.domReady() && window.createKeenWebAutoCollector()
+            })
+        }
+        window.keenWebAutoCollector = {
+            onloadCallbacks: [],
+            onload: function(a) {
+                this.onloadCallbacks.push(a)
+            },
+            domReady: function() {
+                return ["ready", "complete"].indexOf(document.readyState) > -1
+            }
         };
-  </script>
+    </script>
 
-  <script async type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.8.min.js" onload="initKeenWebAutoCollector()">
-  </script>
+    <script async type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.8.min.js" onload="initKeenWebAutoCollector()">
+    </script>
 
-  <!-- end data tracking -->
+    <!-- end data tracking -->
 
 </head>
 
@@ -187,7 +194,7 @@
                 <a title="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fdesireyavro.com%2Findex.html&title=desireyavro%20-%20Hey%20I%27m%20D%C3%A9sir%C3%A9.%20How%20can%20I%20help%3F" alt="linkedin" target="_blank" class="icon fa-linkedin"
                     style="color:mediumblue"><span class="label"></a></li>
             <li><a title="back" href="profile.html" class="btn-floating green"><i class="material-icons">arrow_back</i></a></li>
-            <li><a title="forward" href="index.html" class="btn-floating green"><i class="material-icons">arrow_forward</i></a></li>
+            <li><a title="forward" href="desire_ai.html" class="btn-floating green"><i class="material-icons">arrow_forward</i></a></li>
         </ul>
     </div>
 
