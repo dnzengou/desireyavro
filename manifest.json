@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Hey I'm Désiré's AI assistant. How can I help?",
     "short_name": "Désiré's AI assistant",
@@ -11,3 +12,18 @@
         "type": "image/png"
     }]
 }
+=======
+{
+    "name": "desireyavro.com AI assistant - How can I help?",
+    "short_name": "Désiré's AI assistant",
+    "display": "standalone",
+    "start_url": "/",
+    "theme_color": "#e5e5e5",
+    "background_color": "#fff",
+    "icons": [{
+        "src": "img/favicons/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+    }]
+}
+>>>>>>> 69bcb32517a0b99da32e8acfb74ecf8442f0a644
