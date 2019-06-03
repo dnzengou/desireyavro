@@ -1,6 +1,4 @@
 # Désiré's AI assistant
-<<<<<<< HEAD
-=======
 ## using 
 <ul>
 <li>api.ai for speech recognition and transcription + basic conversation responses</li>
@@ -15,11 +13,10 @@ And voilà!
 
 1. Download a copy of this repository as a zip file, using [this link](https://github.com/dnzengou/desireyavro.git). You can also type `git clone dnzengou/desireyavro` in your terminal.
 
-2. Check out the index [file](http://dnzengou.github.io/desireyavro/index.html) and
+2. Check out the index [file](index.html) and
 
 3. Start editing! 
 
 ## Support
 
 For technical questions, use the [`message me`](https://m.me/HeyImDesire).
->>>>>>> 69bcb32517a0b99da32e8acfb74ecf8442f0a644
