@@ -1,6 +1,6 @@
 {
-    "name": "desireyavro.com - How can I help?",
-    "short_name": "desireyavro",
+    "name": "Hey I'm Désiré's AI assistant. How can I help?",
+    "short_name": "Désiré's AI assistant",
     "display": "standalone",
     "start_url": "/",
     "theme_color": "#e5e5e5",
