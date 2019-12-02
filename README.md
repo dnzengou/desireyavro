@@ -1,12 +1,9 @@
 # desireyavro website
 ## using
 <ul>
-<!--api.ai for speech recognition and transcription + basic conversation responses</li>-->
 <li>particles.js</li>
-  <!-- web server -->
 <li>glitch</li>
 <li>progressive web app site.js & service worker sw.js</li>
-  <!--data tracking-->
 <li>keen.io</li>
 
 And voilà!
