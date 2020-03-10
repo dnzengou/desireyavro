@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <meta name="author" content="Hey I'm Désiré's AI assistant. How can I help?">
+    <meta name="author" content="Hey I'm Désiré's assistant. How can I help?">
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" media="screen" href="assets/css/style_homepage.css">
     <title>desireyavro - Hey I'm Désiré. How can I help?
@@ -158,38 +158,6 @@
         }
     </style>
 
-    <script type="text/javascript">
-        function createKeenWebAutoCollector() {
-            window.keenWebAutoCollector = window.KeenWebAutoCollector.create({
-                    projectId: '59b40899c9e77c0001f19fa3',
-                    writeKey:'9520D750B4F7AFEED9AD8CE4799CEFF3F62B8E9E7267DCC4BE9140F1FF69B20853EFBB323780F432494E0384133D0E4DFF086FCC51EE9F30CB301C392FE3F78340FC86B0B676ABA3584C5280387871F62270F0A47C4E954DE4AA0AE6D46937FB',
-                    onloadCallbacks: window.keenWebAutoCollector.onloadCallbacks
-                }),
-                window.keenWebAutoCollector.loaded()
-        }
-
-        function initKeenWebAutoCollector() {
-            window.keenWebAutoCollector.domReady() ? window.createKeenWebAutoCollector() : document.addEventListener("readystatechange", function() {
-                window.keenWebAutoCollector.domReady() && window.createKeenWebAutoCollector()
-            })
-        }
-        window.keenWebAutoCollector = {
-            onloadCallbacks: [],
-            onload: function(a) {
-                this.onloadCallbacks.push(a)
-            },
-            domReady: function() {
-                return ["ready", "complete"].indexOf(document.readyState) > -1
-            }
-        };
-    </script>
-
-    <script async type="text/javascript" src="https://d26b395fwzu5fz.cloudfront.net/keen-web-autocollector-1.0.8.min.js" onload="initKeenWebAutoCollector()">
-    </script>
-    
-
-    <!-- end scripts-->
-
 </head>
 
 <body>
@@ -259,7 +227,6 @@
 
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/keen.dashboard.js"></script>
     <script src="assets/js/typewrite.js"></script>
 
     <script src="js/sw.js"></script>
